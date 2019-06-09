@@ -14,41 +14,19 @@ public class Unit implements Serializable {
     private int count = 0;
 
     @Id
-    @Column(name = "IIN", unique = true, updatable = false, nullable = false)
-    private long IIN;
+    @Column(name = "iin", nullable = false, unique = true, updatable = false)
+    private long iin;   // ИИН
 
-    @Column(name = "Name")
-    private String name;
+    @Column(name = "Name", nullable = false)
+    private String name;    // Наименование
 
-    @Column(name = "ListOfYears")
-//    private List<Year> list;
-    private Year[] list;
+    @Column(name = "okpo", nullable = false)
+    private long okpo;  // ОКПО
+
+    private String okved;   // ОКВЭД
+    private int okopf;  // ОКОПФ
+    private int okfs;   // ОКФС
 
 
 
-    public Unit() {
-    }
-
-    public Unit(long IIN, String name) {
-        this.IIN = IIN;
-        this.name = name;
-        this.list = new Year[10];
-    }
-
-    public void addPeriod(Year year) {
-        this.list[count] = year;
-        count++;
-    }
-
-    public long getIIN() {
-        return IIN;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Year[] getList() {
-        return list;
-    }
 }

@@ -3,37 +3,81 @@ package unit;
 import java.io.Serializable;
 
 public class Year implements Serializable {
-    private double vir;
-    private double prib;
-    private long date;
 
-    public Year(double vir, double prib, long date) {
-        this.vir = vir;
-        this.prib = prib;
-        this.date = date;
-    }
+    private long iin;           // ИНН
+    private int year;           // Отчетный год
 
-    public double getVir() {
-        return vir;
-    }
+    private int mva_cur;        // Материальные внеоборотные активы (включая основные средства, незавершенные капитальные вложения в основные средства) на конец отчетного года
+    private int mva_last;       // Материальные внеоборотные активы (включая основные средства, незавершенные капитальные вложения в основные средства) на конец предыдущего года
 
-    public void setVir(double vir) {
-        this.vir = vir;
-    }
+    private int nfva_cur;       // Нематериальные, финансовые и другие внеоборотные активы (включая результаты исследований и разработок, незавершенные вложения в нематериальные активы, исследования и разработки, отложенные налоговые активы) на конец отчетного года
+    private int nfva_last;      // Нематериальные, финансовые и другие внеоборотные активы (включая результаты исследований и разработок, незавершенные вложения в нематериальные активы, исследования и разработки, отложенные налоговые активы) на конец предыдущего года
 
-    public double getPrib() {
-        return prib;
-    }
+    private int zap_cur;        // Запасы на конец отчетного года
+    private int zap_last;       // Запасы на конец предыдущего года
 
-    public void setPrib(double prib) {
-        this.prib = prib;
-    }
+    private int ds_cur;         // Денежные средства и денежные эквиваленты на конец отчетного года
+    private int ds_last;        // Денежные средства и денежные эквиваленты на конец предыдущего года
 
-    public long getDate() {
-        return date;
-    }
+    private int fa_cur;         // Финансовые и другие оборотные активы (включая дебиторскую задолженность) на конец отчетного года
+    private int fa_last;        // Финансовые и другие оборотные активы (включая дебиторскую задолженность) на конец предыдущего года
 
-    public void setDate(long date) {
-        this.date = date;
-    }
+    private int bal_act_cur;    // БАЛАНС (актив) на конец отчетного года
+    private int bal_act_last;   // БАЛАНС (актив) на конец предыдущего года
+
+    private int cap_cur;        // Капитал и резервы на конец отчетного года
+    private int cap_last;       // Капитал и резервы на конец предыдущего года
+
+    private int dzs_cur;        // Долгосрочные заемные средства на конец отчетного года
+    private int dzs_last;       // Долгосрочные заемные средства на конец предыдущего года
+
+    private int pdo_cur;        // Прочие долгосрочные обязательства на конец отчетного года
+    private int pdo_last;       // Прочие долгосрочные обязательства на конец предыдущего года
+
+    private int kzo_cur;        // Краткосрочные заемные обязательства на конец отчетного года
+    private int kzo_last;       // Краткосрочные заемные обязательства на конец предыдущего года
+
+    private int cred_cur;       // Кредиторская задолженность на конец отчетного года
+    private int cred_last;      // Кредиторская задолженность на конец предыдущего года
+
+    private int pko_cur;        // Прочие краткосрочные обязательства на конец отчетного года
+    private int pko_last;       // Прочие краткосрочные обязательства на конец предыдущего года
+
+    private int bal_pas_cur;    // БАЛАНС (пассив) на конец отчетного года
+    private int bal_pas_last;   // БАЛАНС (пассив) на конец предыдущего года
+
+    private int rev_cur;        // Выручка за отчетный год
+    private int rev_last;       // Выручка за предыдущий год
+
+    private int rpod_cur;       // Расходы по обычной деятельности за отчетный год
+    private int rpod_last;      // Расходы по обычной деятельности за предыдущий год
+
+    private int perc_cur;       // Проценты к уплате за отчетный год
+    private int perc_last;      // Проценты к уплате за предыдущий год
+
+    private int pd_cur;         // Прочие доходы за отчетный год
+    private int pd_last;        // Прочие доходы за предыдущий год
+
+    private int pr_cur;         // Прочие расходы за отчетный год
+    private int pr_last;        // Прочие расходы за предыдущий год
+
+    private int nal_cur;        // Налоги на прибыль (доходы) за отчетный год
+    private int nal_last;       // Налоги на прибыль (доходы) за предыдущий год
+
+    private int prof_cur;       // Чистая прибыль (убыток) за отчетный год
+    private int prof_last;      // Чистая прибыль (убыток) за предыдущий год
+
+    private int other_ostst;    // Остаток средств на начало отчетного года за отчетный год
+    private int other_celv;     // Целевые взносы за отчетный год
+    private int other_profp;    // Прибыль от предпринимательской деятельности организации за отчетный год
+    private int other_othpr;    // Прочие за отчетный год
+    private int other_celmp;    // Расходы на целевые мероприятия за отчетный год
+    private int other_app;      // Расходы на содержание аппарата управления за отчетный год
+    private int other_inven;    // Приобретение основных средств, инвентаря и иного имущества за отчетный год
+    private int other_oth;      // Прочие за отчетный год
+    private int other_ostend;   // Остаток средств на конец отчетного года за отчетный год
+
+
+
+
 }
